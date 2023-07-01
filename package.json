@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "start": "webpack serve",
+    "compress-images": "npx gulp imgmin",
+    "dev": "npm run compress-images && webpack serve --config webpack.dev.js",
+    "build": "npm run compress-images && webpack --config webpack.prod.js"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.22.5",
+    "browser-sync": "^2.29.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-watch": "^5.0.1",
+    "image-webpack-loader": "^8.1.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "type": "module"
+}

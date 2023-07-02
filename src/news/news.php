@@ -1,6 +1,3 @@
-<?php require_once __DIR__ . '/data/site.php'; ?>
-<?php $title =  $siteData["siteInfo"]["name"]; ?>
-<?php $description = $siteData["home"]["description"]; ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -19,11 +16,10 @@
   <meta property="og:image" content="/common/og-image.jpg">
   <meta property="og:site_name" content="<?php echo $siteData["siteInfo"]["siteUrl"]; ?> ">
   <link rel="stylesheet" type="text/css" href="/css/main.css">
-
 </head>
 
-
 <body>
-  <script src="./js/index.js"></script>
+  <script src="../js/index.js"></script>
 </body>
+
 </html>

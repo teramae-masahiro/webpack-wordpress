@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "@babel/register": "^7.22.5",
+    "autoprefixer": "^10.4.14",
     "browser-sync": "^2.29.3",
     "browser-sync-webpack-plugin": "^2.3.0",
     "clean-webpack-plugin": "^4.0.0",
@@ -18,12 +19,15 @@
     "gulp-watch": "^5.0.1",
     "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.6",
-    "node-sass": "^9.0.0",
+    "postcss-loader": "^7.3.3",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "sass": "^1.63.6"
+  }
 }

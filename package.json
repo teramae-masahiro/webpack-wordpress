@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --config webpack.dev.js",
     "compress-images": "npx gulp imgmin",
-    "dev": "npm run compress-images && webpack serve --config webpack.dev.js",
+    "dev-build": "webpack --config webpack.dev.js",
+    "dev": "npm run compress-images && npm run dev-build",
     "build": "npm run compress-images && webpack --config webpack.prod.js"
   },
   "devDependencies": {

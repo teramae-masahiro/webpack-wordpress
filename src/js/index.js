@@ -1,1 +1,2 @@
-import '../scss/styles.scss';
+import '../scss/app.scss';
+console.log('hekk');

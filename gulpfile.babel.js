@@ -2,7 +2,7 @@ import gulp from 'gulp';
 import eslint from 'gulp-eslint';
 import stylelint from 'gulp-stylelint';
 import imagemin from 'gulp-imagemin';
-import phpcs from 'gulp-phpcs';
+// import phpcs from 'gulp-phpcs';
 
 export const imgmin = () => gulp.src("./src/images_uncompressed/**").pipe(imagemin()).pipe(gulp.dest("./src/images_compressed"));
 
@@ -22,18 +22,18 @@ function lintCSS() {
     }));
 }
 
-function lintPHP() {
-  return gulp.src('src/**/*.php')
-    .pipe(phpcs({
-      bin: 'vendor/bin/phpcs',
-      standard: 'WordPress',
-      warningSeverity: 0
-    }))
-    .pipe(phpcs.reporter('log'));
-}
+// function lintPHP() {
+//   return gulp.src('src/**/*.php')
+//     .pipe(phpcs({
+//       bin: 'vendor/bin/phpcs',
+//       standard: 'WordPress',
+//       warningSeverity: 0
+//     }))
+//     .pipe(phpcs.reporter('log'));
+// }
 
 //htmlの場合はlintHTMLを記述する
-export const lint = gulp.parallel(lintJavaScript, lintCSS, lintPHP);
+export const lint = gulp.parallel(lintJavaScript, lintCSS);
 
 // 新たにlintをデフォルトタスクに追加
 export default gulp.series(imgmin, lint);

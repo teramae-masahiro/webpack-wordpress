@@ -1,2 +1,2 @@
-import '../scss/app.scss';
-console.log('hekk');
+import  "../scss/app.scss";
+console.log("he");
